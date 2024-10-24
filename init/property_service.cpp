@@ -1419,10 +1419,30 @@ static void SetSafetyNetProps() {
 #ifdef SPOOF_FIRST_API_LEVEL_32
             {"ro.product.first_api_level", "32"},
 #endif
-            {"ro.boot.flash.locked", "1"},
-            {"ro.boot.verifiedbootstate", "green"},
-            {"ro.boot.veritymode", "enforcing"},
-            {"ro.boot.vbmeta.device_state", "locked"}
+    	    {"ro.boot.flash.locked", "1"},
+	    {"ro.boot.vbmeta.device_state", "locked"},
+	    {"ro.boot.verifiedbootstate", "green"},
+	    {"ro.boot.veritymode", "enforcing"},
+	    {"ro.boot.warranty_bit", "0"},
+	    {"ro.bootimage.build.type", "user"},
+	    {"ro.build.keys", "release-keys"},
+	    {"ro.build.tags", "release-keys"},
+	    {"ro.build.type", "user"},
+	    {"ro.debuggable", "0"},
+	    {"ro.odm.build.type", "user"},
+	    {"ro.product.build.type", "user"},
+	    {"ro.secure", "1"},
+	    {"ro.system.build.tags", "release-keys"},
+	    {"ro.system.build.type", "user"},
+	    {"ro.system_ext.build.type", "user"},
+	    {"ro.vendor.boot.warranty_bit", "0"},
+	    {"ro.vendor.build.type", "user"},
+	    {"ro.vendor.warranty_bit", "0"},
+	    {"ro.vendor_dlkm.build.type", "user"},
+	    {"ro.warranty_bit", "0"},
+	    {"vendor.boot.vbmeta.device_state", "locked"},
+	    {"vendor.boot.verifiedbootstate", "green"},
+	    {"oplusboot.verifiedbootstate", "green"}	    
         };
 
         // Iterate through the vector and set properties
